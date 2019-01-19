@@ -61,7 +61,7 @@ disqus_username: disqus_83Qlk58Ra3
 
 # Gitalk
 gitalk:
-  enable: true    #是否开启Gitalk评论
+  enable: false    #是否开启Gitalk评论
   clientID: 12fe8e1fa24798b34a9b                            #生成的clientID
   clientSecret: 5a0e3ef429bac434ce3b27c5a10c8b777f2a1046    #生成的clientSecret
   repo: frankie-yanfeng.github.io    #仓库名称
