@@ -11,7 +11,7 @@ github_repo: "https://github.com/frankie-yanfeng/frankie-yanfeng.github.io.git" 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Goals determine what you going to be!"
+#sidebar-about-description: "Goals determine what you going to be!"
 sidebar-avatar: /img/avatar-m.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -22,7 +22,7 @@ RSS: false
 # zhihu_username:     qiubaiying
 github_username:    frankie-yanfeng
 facebook_username:  eyan422
-jianshu_username:   闫_锋
+jianshu_username:   98b268e6141f
 twitter_username:   eyan422
 #linkedin_username:  
 
