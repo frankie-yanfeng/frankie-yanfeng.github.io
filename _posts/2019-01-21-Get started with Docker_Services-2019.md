@@ -1,4 +1,4 @@
-# ---
+---
 layout:     post   				    # 使用的布局（不需要改）
 title:      Get started with Docker 				# 标题
 subtitle:   Services #副标题
