@@ -88,13 +88,17 @@ ga_domain: auto             # 默认的是 auto, 这里我是自定义了的域�
 featured-tags: true                     # 是否使用首页标签
 featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
 
-
+Params: 
+    Search: 站内搜索
 
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
 service-worker: true
 
-
+# Pagination 分页功能
+plugins: [jekyll-paginate,jekyll-sitemap,jekyll-feed]
+paginate: 20
+paginate_path: "page/:num/"
 
 # Friends
 #friends: [
