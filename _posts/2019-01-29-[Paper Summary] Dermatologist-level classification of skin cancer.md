@@ -116,3 +116,5 @@ and ignores background and healthy skin.
 Reference:
 * [Poster](https://cs.stanford.edu/people/esteva/nature/)
 * [Paper](https://www.nature.com/articles/nature21056.epdf?author_access_token=8oxIcYWf5UNrNpHsUHd2StRgN0jAjWel9jnR3ZoTv0NXpMHRAJy8Qn10ys2O4tuPakXos4UhQAFZ750CsBNMMsISFHIKinKDMKjShCpHIlYPYUHhNzkn6pSnOCt0Ftf6)
+* [PowerPoint](https://pdfs.semanticscholar.org/0d0e/e35c1b05868c1bc9494a202dce4b7f414370.pdf)
+* [News](https://news.stanford.edu/2017/01/25/artificial-intelligence-used-identify-skin-cancer/)
