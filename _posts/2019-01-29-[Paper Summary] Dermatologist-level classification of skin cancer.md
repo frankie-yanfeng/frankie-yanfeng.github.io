@@ -1,7 +1,7 @@
 ---
 layout:     post   				    # 使用的布局（不需要改）
 title:      Dermatologist-level classification of skin cancer with deep neural networks 				# 标题
-subtitle:   Paser Summary #副标题
+subtitle:   Paper Summary #副标题
 date:       2019-01-29 				# 时间
 author:     frankie 						# 作者
 header-img: img/post-bg-2015.jpg 	#这篇文章标题背景图片
