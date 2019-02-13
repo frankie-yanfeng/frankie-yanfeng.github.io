@@ -81,12 +81,19 @@ etc.)?
 5. How should performance be measured?
   * Response time: ~15 minutes
   * Detection accuracy and Intersection over Union(IOU) ratio
+  
   ![Imgur](https://i.imgur.com/j0ixMRv.png)
+  
   * Classification accuracy
+  
   ![Imgur](https://i.imgur.com/laJ9cwx.png)
+  
   * Segmentation accuracy
+  
   ![Imgur](https://i.imgur.com/JndGVQd.png)
+  
   * Saliency map
+  
   ![Imgur](https://i.imgur.com/qL1kcx4.png)
   ![Imgur](https://i.imgur.com/g2sre7l.png)
 
@@ -110,7 +117,7 @@ etc.)?
 
 9. Is human expertise available?
 
-  Yes, the Concord Associates provides the human expertise if necessary.
+  * Yes, the Concord Associates provides the human expertise if necessary.
 
 10. How would you solve the problem manually?
 
