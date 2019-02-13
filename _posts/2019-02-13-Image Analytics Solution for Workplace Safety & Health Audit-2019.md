@@ -80,10 +80,10 @@ etc.)?
 
 5. How should performance be measured?
   * Response time: ~15 minutes
-
+  
   * Detection accuracy and Intersection over Union(IOU)  
   ![Imgur](https://i.imgur.com/j0ixMRv.png)
-
+  
   * Classification accuracy
   ![Imgur](https://i.imgur.com/laJ9cwx.png)
 
