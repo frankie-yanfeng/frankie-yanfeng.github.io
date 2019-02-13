@@ -100,9 +100,12 @@ etc.)?
 
 8. What are comparable problems? Can you reuse experience or tools?
   * Yes, we did many similar projects in other domains such as skin disease classification/segmentation and object detection.
+  
   ![Imgur](https://i.imgur.com/sVPQa0u.png)
   ![Imgur](https://i.imgur.com/STf9H67.jpg)
+  
   and even image captioning as long as the image dataset and corresponding descriptions are available.
+  
   ![Imgur](https://i.imgur.com/DfcYG7n.jpg)
 
 9. Is human expertise available?
