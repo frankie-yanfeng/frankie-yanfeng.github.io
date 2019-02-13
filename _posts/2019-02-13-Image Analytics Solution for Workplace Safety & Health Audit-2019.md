@@ -138,18 +138,18 @@ etc.)?
 
 2. Find and document where you can get that data.
 
-  [Depending on Concord Associates, but AIQ may combine the public available dataset]
+  * [Depending on Concord Associates, but AIQ may combine the public available dataset]
 
 3. Check how much space it will take.
   * 100G to 200G, and dynamic change according to specific tasks.
 
 4. Check legal obligations, and get authorization if necessary.
 
-  [Further discussion with Concord Associates needed]
+  * [Further discussion with Concord Associates needed]
 
 5. Get access authorizations
 
-  [Further discussion with Concord Associates needed]
+  * [Further discussion with Concord Associates needed]
 
 6. Create a workspace (with enough storage space).
   * Cloud Solution - compute engine & cloud storage
@@ -157,7 +157,7 @@ etc.)?
 
 7. Get the data.
 
-  [Further discussion with Concord Associates needed]
+  * [Further discussion with Concord Associates needed]
 
 8. Convert the data to a format you can easily manipulate (without changing the
 data itself).
@@ -165,15 +165,15 @@ data itself).
 
 9. Ensure sensitive information is deleted or protected (e.g., anonymized).
 
-  [Further discussion with Concord Associates needed]
+  * [Further discussion with Concord Associates needed]
 
 10. Check the size and type of data (time series, sample, geographical, etc.).
 
-  [Further discussion with Concord Associates needed]
+  * [Further discussion with Concord Associates needed]
 
 11. Sample a test set, put it aside, and never look at it (no data snooping!).
 
-  [Further discussion with Concord Associates needed]
+  * [Further discussion with Concord Associates needed]
 
 ## Explore the Data
 Note: try to get insights from a field expert for these steps.
