@@ -64,10 +64,8 @@ How might we use image recognition to increase the speed of reporting during wor
   * Report generation.
   * Manual report amendment/edit.
 
-
 2. How will your solution be used?
   * This solution will be used by auditors in workplace safety and health(WSH) auditing.
-
 
 3. What are the current solutions/workarounds (if any)?
   * Current manual audit process
@@ -98,11 +96,9 @@ etc.)?
   ![Imgur](https://i.imgur.com/g2sre7l.png)
 
 6. Is the performance measure aligned with the business objective?
-
   * [Further discussion with Concord Associates needed]
 
 7. What would be the minimum performance needed to reach the business objective?
-
   * [Further discussion with Concord Associates needed]
 
 8. What are comparable problems? Can you reuse experience or tools?
@@ -116,12 +112,11 @@ etc.)?
   ![Imgur](https://i.imgur.com/DfcYG7n.jpg)
 
 9. Is human expertise available?
-
   * Yes, the Concord Associates provides the human expertise if necessary.
 
 10. How would you solve the problem manually?
 
-  At last step in generating the report, the auditor may choose manual report drafting or select interested images before report generating.
+  * At last step in generating the report, the auditor may choose manual report drafting or select interested images before report generating.
 
 11. List the assumptions you (or others) have made so far.
   * Sufficient data volume - 600~1000 for each scenario (hazard)
@@ -147,18 +142,15 @@ etc.)?
   * For each defined hazard, 600 to 1000 images are needed.
 
 2. Find and document where you can get that data.
-
   * [Depending on Concord Associates, but AIQ may combine the public available dataset]
 
 3. Check how much space it will take.
   * 100G to 200G, and dynamic change according to specific tasks.
 
 4. Check legal obligations, and get authorization if necessary.
-
   * [Further discussion with Concord Associates needed]
 
 5. Get access authorizations
-
   * [Further discussion with Concord Associates needed]
 
 6. Create a workspace (with enough storage space).
@@ -166,7 +158,6 @@ etc.)?
   * Edge computing on real-time video or other devices like Nvidia Jetson TX series (optional)
 
 7. Get the data.
-
   * [Further discussion with Concord Associates needed]
 
 8. Convert the data to a format you can easily manipulate (without changing the
@@ -174,15 +165,12 @@ data itself).
   * Image prepossessing on light, rotation and other conditions.
 
 9. Ensure sensitive information is deleted or protected (e.g., anonymized).
-
   * [Further discussion with Concord Associates needed]
 
 10. Check the size and type of data (time series, sample, geographical, etc.).
-
   * [Further discussion with Concord Associates needed]
 
 11. Sample a test set, put it aside, and never look at it (no data snooping!).
-
   * [Further discussion with Concord Associates needed]
 
 ## Explore the Data
