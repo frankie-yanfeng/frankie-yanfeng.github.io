@@ -87,7 +87,7 @@ etc.)?
   * Saliency map
   ![Imgur](https://i.imgur.com/qL1kcx4.png)
   ![Imgur](https://i.imgur.com/g2sre7l.png)
-
+  
 6. Is the performance measure aligned with the business objective?
   * [Further discussion with Concord Associates needed]
 
@@ -96,19 +96,15 @@ etc.)?
 
 8. What are comparable problems? Can you reuse experience or tools?
   * Yes, we did many similar projects in other domains such as skin disease classification/segmentation and object detection.
-  
   ![Imgur](https://i.imgur.com/sVPQa0u.png)
   ![Imgur](https://i.imgur.com/STf9H67.jpg)
-  
   and even image captioning as long as the image dataset and corresponding descriptions are available.
-  
   ![Imgur](https://i.imgur.com/DfcYG7n.jpg)
 
 9. Is human expertise available?
   * Yes, the Concord Associates provides the human expertise if necessary.
 
 10. How would you solve the problem manually?
-
   * At last step in generating the report, the auditor may choose manual report drafting or select interested images before report generating.
 
 11. List the assumptions you (or others) have made so far.
@@ -119,7 +115,6 @@ etc.)?
   * Images of separated common articles, tools, vehicles as foreground
   * Images of separated common construction site as background
   * Images with context and without ambiguity, for example, below picture is very confusing if no background information is given. In such case, if human cannot differentiate it, then computer vision models definitely cannot do it as well.
-
   ![Imgur](https://i.imgur.com/9fsEgcL.png)
 
 12. Verify assumptions if possible.
