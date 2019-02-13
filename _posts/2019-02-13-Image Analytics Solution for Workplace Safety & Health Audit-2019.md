@@ -91,7 +91,6 @@ etc.)?
 
   * Saliency map
   ![Imgur](https://i.imgur.com/qL1kcx4.png)
-
   ![Imgur](https://i.imgur.com/g2sre7l.png)
 
 6. Is the performance measure aligned with the business objective?
