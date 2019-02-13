@@ -73,14 +73,10 @@ How might we use image recognition to increase the speed of reporting during wor
   * Current manual audit process
   ![Imgur](https://i.imgur.com/EuZou03.png)
 
-
 4. How should you frame this problem (supervised/unsupervised, online/offline,
 etc.)?
   * This is framed as supervised offline problem. Initially, the auditors take photos, and then the photos are automatically classified according to regulation categories, followed by objects detection. If necessary, the images are further segmented for scene understanding and further analysis.
-
   * The key solution is to properly define the scenarios and problems. For example, what are the typical problems and definitions of housekeeping risk? Are they framed by messy tubes on ground or twisted wires in outdoor. All these are determined with Concord Associates' expertise and help for thoroughly domain knowledge understanding.
-
-
 
 5. How should performance be measured?
   * Response time
@@ -91,7 +87,6 @@ etc.)?
 
   * Classification accuracy
   ![Imgur](https://i.imgur.com/laJ9cwx.png)
-
 
   * Segmentation accuracy
 
@@ -107,7 +102,6 @@ etc.)?
 
   [Further discussion with Concord Associates needed]
 
-
 7. What would be the minimum performance needed to reach the business objective?
 
   [Further discussion with Concord Associates needed]
@@ -122,7 +116,6 @@ etc.)?
   and even image captioning as long as the image dataset and corresponding descriptions are available.
 
   ![Imgur](https://i.imgur.com/DfcYG7n.jpg)
-
 
 9. Is human expertise available?
 
@@ -141,9 +134,7 @@ etc.)?
   * Images of separated common construction site as background
   * Images with context and without ambiguity, for example, below picture is very confusing if no background information is given. In such case, if human cannot differentiate it, then computer vision models definitely cannot do it as well.
 
-
   ![Imgur](https://i.imgur.com/9fsEgcL.png)
-
 
 12. Verify assumptions if possible.
   * Data is as much as possible
@@ -157,7 +148,6 @@ etc.)?
 1. List the data you need and how much you need.
   * For each defined hazard, 600 to 1000 images are needed.
 
-
 2. Find and document where you can get that data.
 
   [Depending on Concord Associates, but AIQ may combine the public available dataset]
@@ -165,7 +155,6 @@ etc.)?
 3. Check how much space it will take.
 
   * 100G to 200G, and dynamic change according to specific tasks.
-
 
 4. Check legal obligations, and get authorization if necessary.
 
@@ -177,8 +166,7 @@ etc.)?
 
 6. Create a workspace (with enough storage space).
   * Cloud Solution - compute engine & cloud storage
-  * Edge computing on mobile or other devices like Nvidia Jetson TX series
-
+  * Edge computing on mobile or other devices like Nvidia Jetson TX series (optional)
 
 7. Get the data.
 
@@ -187,7 +175,6 @@ etc.)?
 8. Convert the data to a format you can easily manipulate (without changing the
 data itself).
   * Image prepossessing on light, rotation and other conditions.
-
 
 9. Ensure sensitive information is deleted or protected (e.g., anonymized).
 
