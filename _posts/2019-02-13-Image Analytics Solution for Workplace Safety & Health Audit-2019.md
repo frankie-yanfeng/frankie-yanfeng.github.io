@@ -82,13 +82,10 @@ etc.)?
   * Response time: ~15 minutes
   * Detection accuracy and Intersection over Union(IOU) ratio
   ![Imgur](https://i.imgur.com/j0ixMRv.png)
-  
   * Classification accuracy
   ![Imgur](https://i.imgur.com/laJ9cwx.png)
-
   * Segmentation accuracy
   ![Imgur](https://i.imgur.com/JndGVQd.png)
-
   * Saliency map
   ![Imgur](https://i.imgur.com/qL1kcx4.png)
   ![Imgur](https://i.imgur.com/g2sre7l.png)
@@ -103,13 +100,9 @@ etc.)?
 
 8. What are comparable problems? Can you reuse experience or tools?
   * Yes, we did many similar projects in other domains such as skin disease classification/segmentation and object detection.
-
   ![Imgur](https://i.imgur.com/sVPQa0u.png)
-
   ![Imgur](https://i.imgur.com/STf9H67.jpg)
-
   and even image captioning as long as the image dataset and corresponding descriptions are available.
-
   ![Imgur](https://i.imgur.com/DfcYG7n.jpg)
 
 9. Is human expertise available?
@@ -148,7 +141,6 @@ etc.)?
   [Depending on Concord Associates, but AIQ may combine the public available dataset]
 
 3. Check how much space it will take.
-
   * 100G to 200G, and dynamic change according to specific tasks.
 
 4. Check legal obligations, and get authorization if necessary.
@@ -161,7 +153,7 @@ etc.)?
 
 6. Create a workspace (with enough storage space).
   * Cloud Solution - compute engine & cloud storage
-  * Edge computing on mobile or other devices like Nvidia Jetson TX series (optional)
+  * Edge computing on real-time video or other devices like Nvidia Jetson TX series (optional)
 
 7. Get the data.
 
