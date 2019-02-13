@@ -79,8 +79,7 @@ etc.)?
   * The key solution is to properly define the scenarios and problems. For example, what are the typical problems and definitions of housekeeping risk? Are they framed by messy tubes on ground or twisted wires in outdoor. All these are determined with Concord Associates' expertise and help for thoroughly domain knowledge understanding.
 
 5. How should performance be measured?
-  * Response time
-  ~15 minutes
+  * Response time: ~15 minutes
 
   * Detection accuracy and Intersection over Union(IOU)  
   ![Imgur](https://i.imgur.com/j0ixMRv.png)
