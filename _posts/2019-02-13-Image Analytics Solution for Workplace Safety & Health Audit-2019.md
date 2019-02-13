@@ -92,11 +92,11 @@ etc.)?
 
 6. Is the performance measure aligned with the business objective?
 
-  [Further discussion with Concord Associates needed]
+  * [Further discussion with Concord Associates needed]
 
 7. What would be the minimum performance needed to reach the business objective?
 
-  [Further discussion with Concord Associates needed]
+  * [Further discussion with Concord Associates needed]
 
 8. What are comparable problems? Can you reuse experience or tools?
   * Yes, we did many similar projects in other domains such as skin disease classification/segmentation and object detection.
