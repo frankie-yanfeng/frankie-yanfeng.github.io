@@ -52,7 +52,7 @@ How might we use image recognition to increase the speed of reporting during wor
 5. Explore many different models and short-list the best ones.
 6. Fine-tune models and combine them into a great solution.
 7. Present solution.
-8. Launch, monitor, and maintain your system.
+8. Launch, monitor, and maintain system.
 
 ## Frame the Problem and Look at the Big Picture
 1. Define the objective in business terms.
@@ -239,9 +239,9 @@ toward the end of fine-tuning.
   search over grid search. If training is very long, we may prefer a Bayesian
   optimization approach (e.g., using Gaussian process priors, as described by
   Jasper Snoek, Hugo Larochelle, and Ryan Adams).
-2. Try Ensemble methods. Combining your best models will often perform better
+2. Try Ensemble methods. Combining our best models will often perform better
   than running them individually.
-3. Once we are confident about your final model, measure its performance on the
+3. Once we are confident about our final model, measure its performance on the
   test set to estimate the generalization error.  
 
 ## Present Our Solution
