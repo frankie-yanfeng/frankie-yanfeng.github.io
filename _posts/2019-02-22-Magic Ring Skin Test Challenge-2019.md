@@ -239,26 +239,37 @@ Write functions for all data transformations we apply, for five reasons
 4. Feature scaling: standardize or normalize features.
 
 ## Shortlist promising models
+
   * If the data is huge, we may want to sample smaller training sets so you can train many different models in a reasonable time (be aware that this penalizes complex models such as large neural nets or Random Forests)
+  
   * Once again, we will try to automate these steps as much as possible
 
   1. Train many quick and dirty models from different categories (e.g., linear, naive Bayes, SVM, Random Forests, neural net, etc.) using standard parameters
   2. Measure and compare their performance
+  
     * For each model, use N-fold cross-validation and compute the mean and stan‐ dard deviation of the performance measure on the N folds
+    
   3. Analyze the most significant variables for each algorithm
   4. Analyze the types of errors the models make
+  
     * What data would a human have used to avoid these errors?
+    
   5. Have a quick round of feature selection and engineering
   6. Have one or two more quick iterations of the five previous steps
   7. Short-list the top three to five most promising models, preferring models that make different types of errors
 
 ## Hyperparameter tuning
+
   * We will want to use as much data as possible for this step, especially as we move toward the end of fine-tuning
+  
   * As always automate what we can
 
   1. Fine-tune the hyperparameters using cross-validation
+  
     * Treat our data transformation choices as hyperparameters, especially when we are not sure about them (e.g., should I replace missing values with zero or with the median value? Or just drop the rows?)
+    
     * Unless there are very few hyperparameter values to explore, prefer random search over grid search. If training is very long, we may prefer a Bayesian optimization approach (e.g., using Gaussian process priors, as described by Jasper Snoek, Hugo Larochelle, and Ryan Adams)
+    
   2. Try Ensemble methods. Combining our best models will often perform better than running them individually
   3. Once we are confident about our final model, measure its performance on the test set to estimate the generalization error
 
@@ -275,9 +286,13 @@ Write functions for all data transformations we apply, for five reasons
 ## LAUNCH!!!
 1. Get our solution ready for production (plug into production data inputs, write unit tests, etc.)
 2. Write monitoring code to check our system’s live performance at regular intervals and trigger alerts when it drops
+
   * Beware of slow degradation too: models tend to “rot” as data evolves
+  
   * Measuring performance may require a human pipeline (e.g., via a crowdsourc‐ing service)
+  
   * Also monitor our inputs’ quality (e.g., a malfunctioning sensor sending random values, or another team’s output becoming stale). This is particularly important for online learning systems
+  
 3. Retrain our models on a regular basis on fresh data (automate as much as possible)
 
 ## Easy access to SK-II outlets as well as marketing and beauty counsellor teams
