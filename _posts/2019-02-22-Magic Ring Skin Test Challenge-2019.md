@@ -260,12 +260,10 @@ Write functions for all data transformations we apply, for five reasons
 ## Hyperparameter tuning
 
   * We will want to use as much data as possible for this step, especially as we move toward the end of fine-tuning
-  
   * As always automate what we can
 
   1. Fine-tune the hyperparameters using cross-validation
    * Treat our data transformation choices as hyperparameters, especially when we are not sure about them (e.g., should I replace missing values with zero or with the median value? Or just drop the rows?)
-    
    * Unless there are very few hyperparameter values to explore, prefer random search over grid search. If training is very long, we may prefer a Bayesian optimization approach (e.g., using Gaussian process priors, as described by Jasper Snoek, Hugo Larochelle, and Ryan Adams)
     
   2. Try Ensemble methods. Combining our best models will often perform better than running them individually
