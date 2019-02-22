@@ -22,6 +22,7 @@ SK-II has its proprietary ‘Magic Ring ™’ skin test carried out in its outl
 There are two issues SK-II is currently facing:
 
 (1) Increasing the number of customers taking this skin tests
+
 (2) Reducing the drop-off between customers booking a skin test slot online and actually physically attending the skin test in a store
 
 ## Face Skin Test Approaches on market
