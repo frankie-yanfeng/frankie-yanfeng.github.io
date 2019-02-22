@@ -248,12 +248,12 @@ Write functions for all data transformations we apply, for five reasons
   1. Train many quick and dirty models from different categories (e.g., linear, naive Bayes, SVM, Random Forests, neural net, etc.) using standard parameters
   2. Measure and compare their performance
   
-    * For each model, use N-fold cross-validation and compute the mean and stan‐ dard deviation of the performance measure on the N folds
+  * For each model, use N-fold cross-validation and compute the mean and stan‐ dard deviation of the performance measure on the N folds
     
   3. Analyze the most significant variables for each algorithm
   4. Analyze the types of errors the models make
   
-    * What data would a human have used to avoid these errors?
+  * What data would a human have used to avoid these errors?
     
   5. Have a quick round of feature selection and engineering
   6. Have one or two more quick iterations of the five previous steps
@@ -267,9 +267,9 @@ Write functions for all data transformations we apply, for five reasons
 
   1. Fine-tune the hyperparameters using cross-validation
   
-    * Treat our data transformation choices as hyperparameters, especially when we are not sure about them (e.g., should I replace missing values with zero or with the median value? Or just drop the rows?)
+  * Treat our data transformation choices as hyperparameters, especially when we are not sure about them (e.g., should I replace missing values with zero or with the median value? Or just drop the rows?)
     
-    * Unless there are very few hyperparameter values to explore, prefer random search over grid search. If training is very long, we may prefer a Bayesian optimization approach (e.g., using Gaussian process priors, as described by Jasper Snoek, Hugo Larochelle, and Ryan Adams)
+  * Unless there are very few hyperparameter values to explore, prefer random search over grid search. If training is very long, we may prefer a Bayesian optimization approach (e.g., using Gaussian process priors, as described by Jasper Snoek, Hugo Larochelle, and Ryan Adams)
     
   2. Try Ensemble methods. Combining our best models will often perform better than running them individually
   3. Once we are confident about our final model, measure its performance on the test set to estimate the generalization error
