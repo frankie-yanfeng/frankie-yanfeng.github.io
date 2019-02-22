@@ -22,11 +22,10 @@ SK-II has its proprietary ‘Magic Ring ™’ skin test carried out in its outl
 There are two issues SK-II is currently facing:
 
 (1) Increasing the number of customers taking this skin tests
-
 (2) Reducing the drop-off between customers booking a skin test slot online and actually physically attending the skin test in a store
 
 ## Face Skin Test Approaches on market
-1. Smartphone based app solutions:
+### Smartphone based app solutions:
 The main feature is to collect the full face image and then apply data(image) analysis accordingly including but not limited to:
   * Skin Color: the color comparison of specific areas with surroundings
   * Pore Size:  Pore detection and size calculation in interested areas
@@ -36,7 +35,7 @@ The main feature is to collect the full face image and then apply data(image) an
   * Comedo
   * Skin Sensitivity
   * ......
-
+  
 The main challenge in smartphone based method is the resource limitation in collecting the images, as per now, most of the apps are using the back-end cameras which have more pixels to capture the images with flash that provides better control on light and other conditions.
 
 Case Study:
@@ -57,7 +56,7 @@ In terms of user experience, the test repeatability is vital to offer the consis
 Limitations:
 Inherent issue is unable to standardize the test procedures. In image capturing process, the light, angle, expression, location, background and distance from the face are all prone to bias and errors which leads to inaccurate results and later unsatisfied user experience.
 
-2. Dedicated skin test devices.
+### Dedicated skin test devices.
 These kind of devices are design to solve the problems list above by putting the test in a constant and standard conditions and getting the quantized skin status. There are many of them, like VISIA and OBSERV. The principles behind are taking advantage of light reflection and scattering to complete the skin test as below:
 
 ![Imgur](https://i.imgur.com/O3LGmPy.jpg)
@@ -102,7 +101,7 @@ How can we create a technology-enabled skin test at scale to make it more access
 # Our Philosophy and Value
 After our internal discussion, AIQ believes the best way to approach this problem is to use hybrid computer vision techniques, that is, the traditional local feature extracted based pattern recognition and modern convolutional neural network(CNN) based object detection and segmentation.
 
-1. Local feature based methods
+## Local feature based methods
 
 This kind of method is particularly valuable in detection the common and regular shapes like circles, lines, rectangles(squares) and triangles.
 
@@ -114,7 +113,7 @@ On the other hand, since we are working on face images, the traditional computer
 
 So, in summary, traditional local feature based methods are universal and scalable across SK-II’s global markets. And luckily, we can borrow the experience from current magic ring tests and do not start from scratch but some fine tunes in mobile solution.
 
-2. Convolutional neural network(CNN) based methods
+## Convolutional neural network(CNN) based methods
 
 Although the above solution is excellent in terms of universal access and scalability, they do have some drawbacks. The main problems are they cannot detect irregular objects which are very common in skin images as below. So in order to tackle this, AIQ introduces the CNN based methods object detection and segmentation.
 
@@ -133,8 +132,7 @@ In gist, the main Steps are as below:
 
 ## Identify the business problems
 1. Define the objective in business terms
-
-[Further discussion with P&G needed on convertion rate etc.]
+  * [Further discussion with P&G needed on convertion rate etc.]
 2. How will your solution be used?
   * The solution can be used by customers to complete skin test.
 3. What are the current solutions/workarounds (if any)?
@@ -202,8 +200,7 @@ In gist, the main Steps are as below:
   * [Further discussion with P&G needed]
 
 ## Explore the data
-Note: try to get insights from a lab expert for these steps.
-
+Note: try to get insights from a expert for these steps.
 1. Create a copy of the data for exploration (sampling it down to a manageable size if necessary)
 2. Create a Jupyter notebook to keep a record of data exploration
 3. Study each attribute and its characteristics:
