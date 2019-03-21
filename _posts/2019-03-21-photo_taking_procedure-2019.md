@@ -57,22 +57,22 @@ tags:								#标签
 ![Imgur](https://i.imgur.com/5ceJSkI.jpg)
 
 * Devices:
-  1. Mat to make sure our target is always in the center
-
-  ![Imgur](https://i.imgur.com/QyKir3P.png)
-
-  2. Balanced light source
-
+  * Mat to make sure our target is always in the center
+  
+    ![Imgur](https://i.imgur.com/QyKir3P.png)
+  
+  * Balanced light source
+  
     ![Imgur](https://i.imgur.com/gZn4DgV.png)
 
-  3. The distance control stick for mobile photo taking
+  * The distance control stick for mobile photo taking
 
     ![Imgur](https://i.imgur.com/1904sKE.png)
 
-  4. The photo taking layout
+  * The photo taking layout
 
     ![Imgur](https://i.imgur.com/WjBXBlU.png)
 
-  5. The distance control stick for digital camera photo taking
+  * The distance control stick for digital camera photo taking
 
     ![Imgur](https://i.imgur.com/JdceXay.png)
