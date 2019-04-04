@@ -4,7 +4,7 @@ title:      sift 1M dataset and ANN 				# 标题
 subtitle:   approximate nearest neighbor #副标题
 date:       2019-02-18 				# 时间
 author:     frankie 						# 作者
-header-img: post-bg-keybord.jpg 	#这篇文章标题背景图片
+header-img: img/post-bg-re-vs-ng2.jpg 	#这篇文章标题背景图片
 catalog: true 						# 是否归档
 tags:								#标签
     - tech
