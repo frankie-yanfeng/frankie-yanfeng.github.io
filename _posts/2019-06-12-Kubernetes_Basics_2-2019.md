@@ -1,6 +1,6 @@
 ---
 layout:     post   				    # 使用的布局（不需要改）
-title:      Kubernetes Concept 1				# 标题
+title:      Kubernetes Concept 2				# 标题
 subtitle:   k8s sharing #副标题
 date:       2019-06-12 				# 时间
 author:     frankie 						# 作者
