@@ -286,3 +286,6 @@ Create a Deployment manifest that specifies the number of replicas that you want
 Deploy the Pod manifest multiple times until you have achieved the number of replicas required.
 
 Create separate named Pod manifests for each instance of the application and deploy as many as you need.
+
+Buy me a cup of coffee:
+![Imgur](https://i.imgur.com/YbpJh2d.png)
