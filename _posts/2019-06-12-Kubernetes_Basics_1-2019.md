@@ -201,4 +201,4 @@ https://jenkins.aiq-vision.aiqtechnology.com/
 
 
 Buy me a cup of coffee:
-![Imgur](https://i.imgur.com/hrTOPq1.png)
+![Imgur](https://i.imgur.com/YbpJh2d.png)
