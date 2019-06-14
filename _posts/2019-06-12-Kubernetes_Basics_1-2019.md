@@ -126,7 +126,7 @@ tags:								#标签
 ![Imgur](https://i.imgur.com/ZMkkV7U.png)
 
 ![Imgur](https://i.imgur.com/ziHpElz.png)
-
+[Imgur](https://i.imgur.com/hrTOPq1.png)
 ![Imgur](https://i.imgur.com/90orbtC.png)
 
 ## when is volumes lifecycle longer than pod? and in which scenarios？
@@ -198,3 +198,7 @@ https://jenkins.aiq-vision.aiqtechnology.com/
 ![Imgur](https://i.imgur.com/jwvFBF2.png)
 
 ![Imgur](https://i.imgur.com/63sJCvP.png)
+
+
+Buy me a cup of coffee:
+![Imgur](https://i.imgur.com/hrTOPq1.png)
