@@ -189,7 +189,7 @@ tags:								#标签
 
 ![Imgur](https://i.imgur.com/CBKKlD2.png)
 
-https://jenkins.aiq-vision.aiqtechnology.com/
+https://jenkins.aiq-xxxxx.aiqtechnology.com/
 
 ![Imgur](https://i.imgur.com/zeYHS8s.png)
 
