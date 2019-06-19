@@ -72,8 +72,6 @@ tags:								#标签
 
 ![Imgur](https://i.imgur.com/mSxJr9B.png)
 
-![Imgur](https://i.imgur.com/mSxJr9B.png)
-
 ![Imgur](https://i.imgur.com/oFHGZbF.png)
 
 ![Imgur](https://i.imgur.com/BuHJ9Vv.png)
@@ -178,7 +176,7 @@ tags:								#标签
 ## AIQ's practice
 
 # Creating a Continuous Delivery Pipeline
-##　Introduction to Jenkins
+## Introduction to Jenkins
 ![Imgur](https://i.imgur.com/rQV5DHM.png)
 
 ![Imgur](https://i.imgur.com/TTs4Nli.png)
@@ -191,7 +189,7 @@ tags:								#标签
 
 https://jenkins.aiq-xxxxx.aiqtechnology.com/
 
-![Imgur](https://i.imgur.com/zeYHS8s.png)
+![Imgur](https://i.imgur.com/RpIzLfn.png)
 
 
 # Deploying a Canary release
