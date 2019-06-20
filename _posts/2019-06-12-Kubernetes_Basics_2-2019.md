@@ -277,7 +277,7 @@ ReplicaSet
 
 StatefulSet
 
-##You want to deploy multiple copies of your application, so that you can load balance traffic across them. How should you deploy this application's Pods to the production Namespace in your cluster?
+## You want to deploy multiple copies of your application, so that you can load balance traffic across them. How should you deploy this application's Pods to the production Namespace in your cluster?
 
 Create a Service manifest for the LoadBalancer that specifies the number of replicas you want to run.
 
@@ -286,6 +286,7 @@ Create a Deployment manifest that specifies the number of replicas that you want
 Deploy the Pod manifest multiple times until you have achieved the number of replicas required.
 
 Create separate named Pod manifests for each instance of the application and deploy as many as you need.
+
 
 Video Link:
 
