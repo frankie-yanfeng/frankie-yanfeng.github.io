@@ -197,6 +197,12 @@ https://jenkins.aiq-xxxxx.aiqtechnology.com/
 
 ![Imgur](https://i.imgur.com/63sJCvP.png)
 
+Video Link:
+https://youtu.be/awy7lpdNPRI
+
+https://youtu.be/JkcQF5XOL2Y
+
 
 Buy me a cup of coffee:
+
 ![Imgur](https://i.imgur.com/YbpJh2d.png)
