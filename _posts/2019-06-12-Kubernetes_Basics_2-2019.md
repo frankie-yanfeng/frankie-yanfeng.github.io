@@ -288,11 +288,13 @@ Deploy the Pod manifest multiple times until you have achieved the number of rep
 Create separate named Pod manifests for each instance of the application and deploy as many as you need.
 
 
+
 Video Link:
 
 https://youtu.be/oiN7xFylVDg
 
 https://youtu.be/JkcQF5XOL2Y
+
 
 Buy me a cup of coffee:
 
