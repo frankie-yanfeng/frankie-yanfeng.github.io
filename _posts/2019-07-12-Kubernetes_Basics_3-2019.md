@@ -34,9 +34,66 @@ tags:								#标签
 
  ![Imgur](https://i.imgur.com/uc5SFO5.png)
 
+## Connecting to a Google Kubernetes Engine (GKE) cluster
+
+```
+gcloud container clusters \
+  get-credentials [CLUSTER_NAME] \
+  --zone [ZONE_NAME]
+```
+
+## Explaining kubectl syntax
+
+  ![Imgur](https://i.imgur.com/qABiDQO.png)
+
+  ![Imgur](https://i.imgur.com/HeSTsyk.png)
+
+  ![Imgur](https://i.imgur.com/xIC0tvE.png)
+
+  ![Imgur](https://i.imgur.com/4m0MgOc.png)
 
 
+# Introspection
+
+  ![Imgur](https://i.imgur.com/9k9qYGL.png)
 
 
+  ```
+  kubectl get pods
+  ```
 
-## What is the difference between a pod and a container?
+  ![Imgur](https://i.imgur.com/Og7TLjY.png)
+
+  CrashLoopBackOff means that the pod isn't configured correctly.
+
+
+  ```
+  kubectl describe pod [POD_NAME]
+  ```
+
+  ![Imgur](https://i.imgur.com/KmTF7cR.png)
+
+  ```
+  kubectl exec [POD_NAME] -- [command]
+  ```
+
+  ![Imgur](https://i.imgur.com/C72Ypgy.png)
+
+  ```
+  kubectl exec -it [POD_NAME] -- [command]
+  ```
+
+  ![Imgur](https://i.imgur.com/geNEJBw.png)
+
+  Pass terminal's standard input (stdin) to the container.
+
+  Display the container's standard output (stdout) in your terminal window.
+
+  Uses the flags -i and -t (or -it).
+
+
+  ```
+  kubectl logs [POD_NAME]
+  ```
+
+  ![Imgur](https://i.imgur.com/VYYIvqF.png)
