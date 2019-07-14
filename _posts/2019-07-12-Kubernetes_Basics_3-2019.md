@@ -130,7 +130,7 @@ gcloud container clusters \
 
   ![Imgur](https://i.imgur.com/9vNWtGs.png)
 
-  ## There are three ways to create a Deployment
+## There are three ways to create a Deployment
 
   ```
   kubectl apply -f [DEPLOYMENT_FILE]
@@ -150,7 +150,7 @@ gcloud container clusters \
   GKE workloads menu in the GCP console.
   ```
 
-  ### Use kubectl to inspect your Deployment
+### Use kubectl to inspect your Deployment
   ```
   kubectl get deployment [DEPLOYMENT_NAME]
   ```
@@ -161,7 +161,7 @@ gcloud container clusters \
   kubectl get deployment [DEPLOYMENT_NAME] -o yaml > this.yaml
   ```
 
-  ### Use the 'describe' command to get detailed info
+### Use the 'describe' command to get detailed info
   ```
   kubectl describe deployment [DEPLOYMENT_NAME]
   ```
@@ -170,7 +170,7 @@ gcloud container clusters \
 
   Or use the GCP Console
 
-  ## Scaling a Deployment manually
+## Scaling a Deployment manually
 
   ```
   kubectl scale deployment [DEPLOYMENT_NAME] -replicas=5
@@ -186,7 +186,7 @@ gcloud container clusters \
   ```
   wait period before performing another scale down action
 
-  ## Updating deployments
+## Updating deployments
   ```
   apiVersion: apps/v1
   kind: Deployment
@@ -215,7 +215,7 @@ gcloud container clusters \
   kubectl edit deployment/[DEPLOYMENT_NAME]
   ```
 
-## Rollinh updates
+## Rolling updates
   ```
   [...]
   kind: deployment
@@ -327,5 +327,3 @@ kubectl patch service my-app-service -p '{"spec":{"selector":{"version":"v2"}}}
   ```
   kubectl delete deployment [DEPLOYMENT_NAME]
   ```
-
-  
