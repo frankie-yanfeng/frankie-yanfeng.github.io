@@ -35,11 +35,9 @@ Two pods communicate on the same node.
 
 Pod IP is from the VPC (logically isolated networks that provide connectivity for resources you deploy within GCP. such as kubernetes clusters, Compute Engine instances, and App Engine)
 
-AVPC can be composed of many different IP subnets in regions all around the world.
+A VPC can be composed of many different IP subnets in regions all around the world.
 
   ![Imgur](https://i.imgur.com/kD9XBHR.png)
-
-  ![Imgur](https://i.imgur.com/b4jcz1Q.png)
 
   ![Imgur](https://i.imgur.com/UVbAsgK.png)
 
@@ -180,5 +178,3 @@ NodePort is built on top of cluster IP's service.
   ![Imgur](https://i.imgur.com/7ufudAh.png)
 
   ![Imgur](https://i.imgur.com/maDs7YX.png)
-
-  
