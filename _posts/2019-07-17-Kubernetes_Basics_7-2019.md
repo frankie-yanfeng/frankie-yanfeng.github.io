@@ -65,4 +65,34 @@ tags:								#标签
 
   ![Imgur](https://i.imgur.com/SjJh14s.png)
 
+## AccessModes determine how the Volume will read or write
+
+  ReadWriteOnce mounts the volume as readwrite to a single node.
+
+  ![Imgur](https://i.imgur.com/M2ML7yk.png)
+
+  ReadOnlyMany mounts a volume as read-only to many nodes.
+
+  ![Imgur](https://i.imgur.com/3xtnGL6.png)
+
+  ReadWriteMany mounts volumes as readwrite to many nodes.
+
+  ![Imgur](https://i.imgur.com/lMsXk6v.png)
+
+  GCP persistent disks do not support ReadWriteMany
+
+  NFS supports the ReadWriteMany access mode.
+
+  ![Imgur](https://i.imgur.com/S0goNvS.png)
+
+  ![Imgur](https://i.imgur.com/qkAi5YE.png)
+
+## An alternative option is Dynamic Provisioning
+
+  ![Imgur](https://i.imgur.com/yephDWx.png)
+
+  ![Imgur](https://i.imgur.com/MCP0HIf.png)
+
+  ![Imgur](https://i.imgur.com/3tyPGRe.png)
+
   
