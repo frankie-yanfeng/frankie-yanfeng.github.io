@@ -74,4 +74,32 @@ tags:								#标签
 
   ![Imgur](https://i.imgur.com/dI49p3W.png)
 
+  ![Imgur](https://i.imgur.com/oyvtVjn.png)
+
+  ![Imgur](https://i.imgur.com/Pd2MExH.png)
+
+  ![Imgur](https://i.imgur.com/xeE0lst.png)
+
+  ![Imgur](https://i.imgur.com/j295tkq.png)
+
+  ![Imgur](https://i.imgur.com/v3ln9CE.png)
+
+## Probes
+
+  Service dependencies
+
+  ![Imgur](https://i.imgur.com/6Mnh0bn.png)
+
+  ![Imgur](https://i.imgur.com/wJGixDw.png)
+
+  ![Imgur](https://i.imgur.com/WXzQ75S.png)
+
+  ![Imgur](https://i.imgur.com/s11EyNe.png)
+
+  If the request returns with a code range from 200 to 400, kubelet considers the container healthy.
+
+  ![Imgur](https://i.imgur.com/w1C8oQj.png)
+
+  ![Imgur](https://i.imgur.com/vk9ttLD.png)
+
   
