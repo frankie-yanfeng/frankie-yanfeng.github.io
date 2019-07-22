@@ -147,6 +147,8 @@ In GKE envirtonments, RBAC extends Cloud IAM security by offering control over K
 ## Pod Security
   How to control what sorts of things of pod, or more specifically the containers inside a pod are allowed to do.
 
+  In a Linux system, zero is the privileged root user's user ID.
+
   ![Imgur](https://i.imgur.com/rvEcIai.png)
 
   ![Imgur](https://i.imgur.com/ASdXtoO.png)
@@ -160,3 +162,19 @@ In GKE envirtonments, RBAC extends Cloud IAM security by offering control over K
   ![Imgur](https://i.imgur.com/ASSnjrm.png)
 
   The pod security policy admission controller acts on the creation and modification of pods, and determines whether the pod should be admitted based on the requested security context and the available pod security policies. Note that these policies are enforced during the creation or updated of a pod, but security context is enforced by the Container Runtime.
+
+## Applying pod security policies
+
+  After you've defined a pod security policy, you need to authorize it. Otherwise it'll prevent any Pod from being created. You can authorize a policy using Kubernetes Role-Based Access Control. Here, a cluster role allows the pod security policy called demo PSP to be used.
+
+  ![Imgur](https://i.imgur.com/4kF8vAX.png)
+
+  ![Imgur](https://i.imgur.com/X0JO3oR.png)
+
+  Two subjects for the role binding are specified. The first is a group containing all service accounts within the demo name-space. The other is a specific service account in the demo name space. The role binding can grant permission to the creator of the pod which might be a deployment, replica set or other template controller or to the created pods service account. Note that granting the controller access to the policy would grant access for all pods created by that controller. So the preferred method for authorizing policies is to grant access to the pods service account.
+
+  ![Imgur](https://i.imgur.com/DAh4mV4.png)
+
+  ![Imgur](https://i.imgur.com/jy743E2.png)
+
+  
