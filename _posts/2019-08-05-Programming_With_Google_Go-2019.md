@@ -18,6 +18,193 @@ tags:								#标签
 
 ## Gist
 
+* Multiple Return Values
+```
+func foo2(x int) (int, int) {
+   return x, x + 1
+}
+a, b := foo2(3)
+```
+
+* Call by Value
+```
+func foo(y int) {
+   y = y + 1
+}
+func main() {
+   x := 2
+   foo(x)
+   fmt.Print(x)
+}
+```
+
+* Call by Reference
+```
+func foo(y *int) {
+   *y = *y + 1
+}
+func main() {
+   x := 2
+   foo(&x)
+   fmt.Print(x)
+}
+```
+
+* Passing Array Arguments
+```
+func foo(x [3]int) int {
+   return x[0]
+}
+func main() {
+   a := [3]int{1, 2, 3}
+   fmt.Print(foo(a))
+}
+```
+
+* Passing Array Pointers
+```
+func foo(x *[3]int) {
+   (*x)[0] = (*x)[0] + 1
+}
+func main() {
+   a := [3]int{1, 2, 3}
+   foo(&a)
+   fmt.Print(a)
+}
+```
+
+* Passing Slices
+```
+func foo(sli []int) {
+   sli[0] = sli[0] + 1
+}
+func main() {
+   a := []int{1, 2, 3}
+   foo(a)
+   fmt.Print(a)
+}
+```
+
+* Function Types
+  * Variables as Functions
+  ```
+  var funcVar func(int) int
+  func incFn(x int) int {
+     return x + 1
+  }
+  func main() {
+     funcVar = incFn
+     fmt.Print(funcVar(1))
+  }
+  ```
+
+  * Functions as Arguments
+  ```
+  func applyIt(afunct func (int) int, 	val int) int {
+     return afunct(val)
+  }
+  func incFn(x int) int {return x + 1}
+  func decFn(x int) int {return x - 1}
+  func main() {
+  	fmt.Println(applyIt(incFn, 2))
+  	fmt.Println(applyIt(decFn, 2))
+  }
+  ```
+
+  * Anonymous Functions
+  ```
+  func applyIt(afunct func (int) int, 	val int) int {
+     return afunct(val)
+  }
+  func main() {
+     v := applyIt(func (x int) int 				 
+     {return x + 1}, 2)
+     fmt.Println(v)
+  }
+  ```
+
+*  Functions as Return Values
+```
+func MakeDistOrigin(o_x, o_y float64)
+      func (float64, float64) float64 {
+        fn := func (x, y float64) float64 {
+        return math.Sqrt(math.Pow(x - o_x, 2) + math.Pow(y - o_y, 2))
+      }
+   return fn
+}
+func main() {
+   Dist1 := MakeDistOrigin(0,0)
+   Dist2 := MakeDistOrigin(2,2)
+   fmt.Println(Dist1(2,2))
+   fmt.Println(Dist2(2,2))
+}
+```
+
+* Environment of a Function
+  * Set of all names that are valid inside a function
+  * Names defined locally, in the function
+  * Lexical Scoping
+  * Environment includes names defined in block where the function is defined
+  ```
+  var x int
+  funct foo(y int) {
+     z := 1
+     …
+  }
+  ```
+
+* Closure
+  * Function + its environment
+  * When functions are passed/returned, their environment comes with them!
+  ```
+  func MakeDistOrigin(o_x, o_y float64)
+  			func (float64, float64) float64 {
+     fn := func (x, y float64) float64 {
+       		return math.Sqrt(math.Pow(x - o_x, 2) +
+  				  	  math.Pow(y - o_y, 2))
+           }
+  ```
+  * o_x and o_y are in the closure of fn()
+
+* Variable Argument Number
+```
+func getMax(vals ...int) int {
+	maxV := -1
+	for _, v := range vals {
+		if v > maxV {
+			maxV = v
+		}
+	}
+	return maxV
+}
+func main() {
+	fmt.Println(getMax(1, 3, 6, 4))
+
+	vslice := []int{1, 3, 6, 4}
+
+	fmt.Println(getMax(vslice...))
+}
+```
+
+* Deferred Function Calls
+```
+func main() {
+	defer fmt.Println(“Bye!”)
+
+	fmt.Println(“Hello!”)
+}
+//or
+func main() {
+	i := 1
+	defer fmt.Println(i+1) //Arguments of a deferred call are evaluated immediately
+	i++
+	fmt.Println(“Hello!”)
+}
+```
+
+
+
+
 ## Assignment
 ### Course 1 - Getting Started with Go
 #### week 1
