@@ -11,10 +11,10 @@ tags:								#标签
 ---
 
 # Course links:
-https://www.coursera.org/specializations/google-golang
+[https://www.coursera.org/specializations/google-golang](https://www.coursera.org/specializations/google-golang)
 
 ## Personal repo links:
-https://github.com/frankie-yanfeng/Programming-with-Google-Go
+[https://github.com/frankie-yanfeng/Programming-with-Google-Go](https://github.com/frankie-yanfeng/Programming-with-Google-Go)
 
 ## Gist
 
