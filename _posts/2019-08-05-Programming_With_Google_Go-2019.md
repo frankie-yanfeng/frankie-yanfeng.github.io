@@ -216,8 +216,175 @@ func main() {
   * Object v is an implicit argument to the method
   * Call by value
 
-*
+* Structs
+```
+type Point struct {
+	x float64
+	y float64
+}
+func (p Point) DistToOrig() {
+   t := math.Pow(p.x, 2) + math.Pow(p.y, 2)
+   return math.Sqrt(t)
+}
+func main() {
+   p1 := Point(3, 4)
+   fmt.Println(p1.DistToOrig())
+}
+```
 
+* Go can only hide data/methods in a package
+* Variables/functions are only exported if their names start with a capital letter
+* Can define public functions to allow access to hidden data
+* Hide fields of structs by starting field name with a lower-case letter
+* Pointer Receivers
+  * Receiver can be a pointer to a type
+  * Call by reference, pointer is passed to the method
+  * Point is referenced as p, not \*p
+  * Dereferencing is automatic with . operator
+  * Good programming practice:
+    1. All methods for a type have pointer receivers, or
+    2. All methods for a type have non-pointer receivers
+    3. Mixing pointer/non-pointer receivers for a type will get confusing
+Pointer receiver allows modification
+
+```
+type Point struct {
+	x float64
+	y float64
+}
+func (p *Point) OffsetX(v float64) {
+	p.x = p.x + v
+}
+func main() {
+	p := Point{3, 4}
+	p.OffsetX(5)
+	fmt.Println(p.x)
+}
+```
+
+* Go does not have inheritance
+* Overriding: Subclass redefines a method inherited from the superclass with Same signature (name, params, return)
+* Interfaces: Set of method signatures
+  * Name, parameters, return Values
+  * Implementation is NOT defined
+  * Used to express conceptual similarity between types
+  * Type satisfies an interface if type defines all methods specified in the interface
+    * Same method signatures
+    * **Similar to inheritance with overriding**
+  * Interface Values
+    * Can be treated like other Values
+      - Assigned to Variables
+      - Passed, returned
+    * Interface values have two components
+      1. Dynamic Type: Concrete type which it is assigned to
+      2. Dynamic Value: Value of the dynamic type
+      * Interface value is actually a pair:
+        - (dynamic type, dynamic value)
+
+```
+//Dynamic type is Dog, Dynamic value is d1
+type Speaker interface {Speak ()}
+type Dog struct {name string}
+func (d Dog) Speak() {
+	fmt.Println(d.name)
+}
+func main() {
+  var s1 Speaker
+  var d1 Dog{“Brian”}
+  s1 = d1
+  s1.Speak()
+}
+```
+      * An interface can have a nil dynamic value
+```
+var s1 Speaker
+var d1 *Dog
+s1 = d1
+//d1 has no concrete value yet
+//s1 has a dynamic type but no dynamic value
+```
+
+```
+func (d *Dog) Speak() {
+	if d == nil {
+		fmt.Println(“<noise>”)
+	} else {
+		fmt.Println(d.name)
+	}
+}
+var s1 Speaker
+var d1 *Dog
+s1 = d1
+s1.Speak()
+```
+* Interface for abstraction - Using Interfaces
+  * Need a function which takes multiple types as a parameter
+  * Function foo() parameter
+  * Type X or type Y
+  * Define interface Z
+  * foo() parameter is interface Z
+  * Types X and Y satisfy Z
+  * Interface methods must be those needed by foo()
+```
+type Shape2D interface {
+   Area() float64
+   Perimeter() float64
+}
+//Rectangle and Triangle satisfy Shape2D interface
+type Triangle {…}
+func (t Triangle) Area() float64 {…}
+func (t Triangle) Perimeter() float64 {…}
+type Rectangle {…}
+func (t Rectangle) Area() float64 {…}
+func (t Rectangle) Perimeter() float64 {…}
+//Parameter is any type that satisfies the interface
+func FitInYard(s Shape2D) bool {
+	if (s.Area() < 100 &&
+	    s.Perimeter() < 100) {
+		return true
+	}
+	return false
+}
+//
+```
+  * Empty Interfaces
+    * Empty interface specifies no methods
+    * All types satisfy the empty interface
+    * Use it to have a function accept any type as a parameter
+
+```
+func PrintMe(val interface{}) {
+	fmt.Println(val)
+}
+```
+
+  * Type Assertions
+
+```
+func DrawShape(s Shape2D) bool {
+	switch sh := s.(type) {
+	case Rectangle:
+		DrawRect(sh)
+	case Triangle:
+		DrawTriangle(sh)
+	}
+}
+```
+* Error Handling
+  * Many Go programs return error interface objects to indicate errors
+```
+type error interface {
+	Error() string
+}
+//Correct operation: error == nil
+//Incorrect operation: Error() prints error message
+f, err := os.Open(“/harris/test.txt”)
+if err != nil {
+	fmt.Println(err)
+	return
+}
+//fmt package calls the Error() method to generate string to print
+```
 
 
 ## Assignment
