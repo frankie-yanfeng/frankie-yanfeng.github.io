@@ -1,7 +1,7 @@
 ---
 layout:     post   				    # 使用的布局（不需要改）
 title:      Golang Low Level Programming 				# 标题
-subtitle:   unsafe #副标题
+subtitle:   unsafe package #副标题
 date:       2019-10-24 				# 时间
 author:     frankie 						# 作者
 header-img: img/golang_unsafe.png 	#这篇文章标题背景图片
