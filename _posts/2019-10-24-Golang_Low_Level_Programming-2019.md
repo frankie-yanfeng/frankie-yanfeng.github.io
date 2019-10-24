@@ -36,7 +36,7 @@ Sometimes, in order to achieve the highest possible performance, the rules are f
 
 * used for runtime, os. syscall and net that interact with OS
 
-* uintptr: its width is not specified but is sufficient to hold all the bits of a pointer value. The uintptr type is used only for low-level programming, such as at the boundary of a Go program wit h a C library or an operating system
+* uintptr: its width is not specified but is sufficient to hold all the bits of a pointer value. The uintptr type is used only for low-level programming, such as at the boundary of a Go program wit h a C library or an operating system (unsigned integer wide enough to represent an address)
 
 ## Sizeof
 * unsafe.Sizeof: reporting the size in bytes of the representation of its operand, which may be an expression of any type; the expression is not evaluated.
@@ -96,4 +96,66 @@ Sizeof(x)  = 32   Alignof(x) = 8
 Sizeof(x.a) = 1   Alignof(x.a) = 1  Offsetof(x.a) = 0
 Sizeof(x.b) = 2   Alignof(x.b) = 2  Offsetof(x.b) = 2
 Sizeof(x.c) = 24  Alignof(x.c) = 8  Offsetof(x.c) = 8
+```
+
+# Pointer
+* The unsafe.Pointer type is a special kind of pointer that can hold the address of any variable
+
+* unsafe.Pointers are comparable and may be compare d with nil
+
+* (*unsafe.Pointer) can not be indirected through, because we don't know what type that expression should have
+
+```
+package math
+func Float64bits(f float64) uint64 { return *(*uint64)(unsafe.Pointer(&f)) }
+fmt.Printf("%#016x\n", Float64bits(1.0)) // "0x3ff0000000000000"
+```
+
+* uintptr -> unsafe.Pointer may not work because not all numbers are valid addresses
+
+```
+var x struct {
+  a bool
+  b int16
+  c []int
+}
+
+// equivalent to pb := &x.b
+pb := (*int16)(unsafe.Pointer(
+    uintptr(unsafe.Pointer(&x)) + unsafe.Offsetof(x.b)))
+
+*pb = 42
+
+fmt.Println(x.b) // "42"
+
+// Try to replace (* int16) to (* float64) and observe the result again -> 0
+```
+
+
+* Diff between uintptr & unsafe.Pointer
+
+GC may move the variables around in memory to reduce fragmentation or bookkeeping (moving GCs). When this happens, all pointers that hold the address of the old location must be updated to point to the new one. GC takes unsafe,Pointer as an pointer and thus its value must change as the variables moves, but unintptr is just a number so its value must not change.
+```
+// NOTE: subtly incorrect!
+tmp := uintptr(unsafe.Pointer(&x)) + unsafe.Offsetof(x.b)
+pb := (*int16)(unsafe.Pointer(tmp))
+*pb = 42
+```
+
+There are no pointers that refer to the variable create d by new, so the garbage collector is entitled to recycle its storage when this statement completes, after which pT contains the address where the variable was but is no logger.
+
+```
+pT := uintptr(unsafe.Pointer(new (T))) // NOTE: wrong!
+```
+
+* No guarantees after an unsafe.Pointer -> uintptr conversion
+minimize the number of operations between converting an unsafe.Pointer to uintptr and using that uintptr
+
+* When cal ling a library function that returns a uintptr, such as those below fro m the reflect package, the result should be immediately converted to an unsafe.Pointer to ensure that it continues to point to the same variable.
+
+```
+package reflect
+func (Value) Pointer() uintptr
+func (Value) UnsafeAddr() uintptr
+func (Value) InterfaceData() [2]uintptr // (index 1)
 ```
