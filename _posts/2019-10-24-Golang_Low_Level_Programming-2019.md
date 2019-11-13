@@ -142,7 +142,7 @@ pb := (*int16)(unsafe.Pointer(tmp))
 *pb = 42
 ```
 
-There are no pointers that refer to the variable create d by new, so the garbage collector is entitled to recycle its storage when this statement completes, after which pT contains the address where the variable was but is no logger.
+There are no pointers that refer to the variable created by new, so the garbage collector is entitled to recycle its storage when this statement completes, after which pT contains the address where the variable was but is no logger.
 
 ```
 pT := uintptr(unsafe.Pointer(new (T))) // NOTE: wrong!
