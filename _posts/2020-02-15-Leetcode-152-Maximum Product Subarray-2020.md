@@ -4,7 +4,7 @@ title:      Leetcode-152 Maximum Product Subarray 				# 标题
 subtitle:   Leetcode-152 #副标题
 date:       2020-02-15 				# 时间
 author:     frankie 						# 作者
-header-img: img/leetcode.png 	#这篇文章标题背景图片
+header-img: img/tag-bg-o.jpg 	#这篇文章标题背景图片
 catalog: true 						# 是否归档
 tags:								#标签
     - Leetcode
