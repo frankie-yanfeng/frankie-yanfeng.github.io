@@ -50,9 +50,9 @@ public:
 
 [递推公式](https://leetcode.com/problems/maximum-product-subarray/discuss/201223/python-code)
 
-https://leetcode.com/problems/maximum-product-subarray/discuss/307430/4ms-C%2B%2B-solution
+[C++ Solution](https://leetcode.com/problems/maximum-product-subarray/discuss/307430/4ms-C%2B%2B-solution)
 
-https://leetcode.com/problems/maximum-product-subarray/discuss/48417/Straightforward-implementation-of-the-suggested-solution-in-10-lines-of-C%2B%2B
+[C++ Solution] (https://leetcode.com/problems/maximum-product-subarray/discuss/48417/Straightforward-implementation-of-the-suggested-solution-in-10-lines-of-C%2B%2B)
 
 ```c++
 class Solution {
