@@ -2,7 +2,7 @@
 layout:     post   				    # 使用的布局（不需要改）
 title:      Leetcode-152 Maximum Product Subarray 				# 标题
 subtitle:   Leetcode-152 #副标题
-date:       2019-02-15 				# 时间
+date:       2020-02-15 				# 时间
 author:     frankie 						# 作者
 header-img: img/leetcode.png 	#这篇文章标题背景图片
 catalog: true 						# 是否归档
